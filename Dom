@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>java</title>
+<STYLE>
+body{
+background-color:lightgrey;
+background-image:url("time.jpg");
+background-position: center;
+  margin-right: 90px;
+  background-attachment: fixed;}
+h1{
+font-size:50px;}
+</style>
+</head>
+<body>
+<h1><center><b>Time Traveling Machine</center></b></h1>
+<p><center>This button tells you the timing of the current period which you live.</center></p><br>
+<center><p id="demo"><button onclick="displayDate()">The TENSE is?</button></center><center></p>
+<h2 onclick="changeText(this)">Know the secret website by clicking this !!!! </h2></center>
+<center><tr><td>Email</td><td> <input type="text" id="name" onchange="lowerCase()"></td></tr></center><br>
+<center><div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:red;width:100px;height:10px;padding:30px;">
+SUBMIT</div></center><br>
+<script>function displayDate() 
+{
+  document.getElementById("demo").innerHTML = Date();
+ }
+  function changeText(id) {
+  id.innerHTML = "TIMER!";
+}
+function lowerCase()
+ {
+  const x = document.getElementById("name");
+  x.value = x.value.toLowerCase();
+}
+function mDown(obj) 
+{
+  obj.style.backgroundColor = "white";
+  obj.innerHTML = "Submit";}
+function mUp(obj) {
+  obj.style.backgroundColor="LIGHTGREY";
+  obj.innerHTML="Thank You";
+}
+</script>
+</body>
+</html>
